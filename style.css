@@ -156,6 +156,74 @@
     margin-left: 10px;
   }
   
+  /*Section 3: Education*/
+
+  .education-section h2{
+    padding: 0 50px;
+    margin-bottom: 50px;
+  } 
+
+  .education-section h2{
+    font-size: 35px;
+    text-align: center; 
+  }
+
+  .education-section .university{
+
+    margin-bottom: 100px;
+  }
+
+  .education-section .university h2{
+    font-size: 18px;
+    text-align: left; 
+    padding: 0 50px;
+    margin-bottom: 0px;
+  }
+
+  .education-section .university p{
+    text-align: left; 
+    padding: 0 50px;
+  }
+
+  /*Section 4: Projects*/
+
+  .project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 50px;
+  }
+
+  .project-section h2{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 20;
+    padding: 0 30px;
+  }
+
+  .project-section .project-desc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+  .project-section .project-desc .project{
+    display:flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid var(--text-color);
+    width: 400px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+
 
   @media (max-width: 850px){
     /*Section 1: Hero*/
