@@ -43,8 +43,7 @@
         <section class="hero-section">
             <div class = 'text'>
                 <h2>Hi, I'm Wong</h2>
-                <p>Hello! I am a software support enginner that helps with solving problem and answering client enquries. Recently, I have completed
-                    my Master's of Data Science in Universiti Malaya and I am exploring opportunities in Data Science world.</p>
+                <p>I'm a Software Support Engineer with a passion for solving problems and assisting clients with technical inquiries. I recently completed my Master’s in Data Science from Universiti Malaya, where I honed my skills in data analysis, machine learning, and big data tools. I'm now actively exploring opportunities in the dynamic field of Data Science, looking to apply my technical expertise and analytical mindset to real-world challenges.</p>
         
                 <div class="links">
                     <a href = "#Skills">
@@ -57,7 +56,12 @@
                         <span>Education</span>
                     </a>
 
-                    <a href = "#Contact">
+                    <a href = "#projects">
+                        <i class="fa-solid fa-diagram-project"></i>
+                        <span>Projects</span>
+                    </a>
+
+                    <a href = "#contact">
                         <i class="fa-solid fa-envelope"></i>
                         <span>Contact</span>
                     </a>
@@ -113,15 +117,18 @@
 
             <div class="university">
                 <h2>Universiti Malaya</h2>
-                <p>Master of Data Science</p>
-                <p>CGPA: 3.88</p>
-                <p>June 2024</p>
-                <br>
+                <p>Master of Data Science <br>
+                    CGPA: 3.88 <br>
+                    June 2024</p>
+            </div>
+
+            <div class="university2">
                 <h2>Universiti Teknologi Petronas</h2>
                 <p>Bachelor's Degree of Petroleum Geoscience</p>
                 <p>CGPA: 3.87</p>
                 <p>May 2015</p>
             </div>
+
         </section>
         <!-- Section 4: Projects-->
         <section id = "projects" class = "project-section">
@@ -131,7 +138,8 @@
                     <a href="https://github.com/kianwai96/bitcoin_pred">
                         <span>Bitcoin Price Prediction with Market Sentiment Analysis</span>
                     </a>
-                    <p>A Python-based research project focused on Twitter sentiment analysis with VADER and Bitcoin price prediction using historical data. Applied machine learning algorithms included Linear Regression, Decision Tree, Random Forest, XGBoost, and Long Short Term Memory (LSTM)</p>
+                    <p>A Python-based research project focused on Twitter sentiment analysis with VADER analysis and Bitcoin price prediction using historical data. 
+                        Sentiment scores were obtained from the VADER analysis and was combined with the Bitcoin historical price data to train machine learning models. Applied machine learning algorithms included Linear Regression, Decision Tree, Random Forest, XGBoost, and Long Short Term Memory (LSTM).</p>
                 </div>
                 
 
@@ -139,18 +147,22 @@
                     <a href="https://github.com/kianwai96/BodyPerformance">
                         <span>Body Performance Classification</span>
                     </a>
-                <p>A Python Jupyter project focused on body performance prediction with applying machine learning algorithms such as XGBoost, Decision Tree, and Support Vector Machine (SVM) </p>
-                <a href = 'https://wong21570.pythonanywhere.com'>
-                    <span>Body Performance Classifcation Web Application </span> 
-                </a>
+                    <p>A Python Jupyter project focused on body performance prediction with applying machine learning algorithms such as XGBoost, Decision Tree, and Support Vector Machine (SVM).
+                        The best performing model is exported and deployed as a web application using Flask application framework.
+                    </p>
+                    <div class = "link">
+                        <a href = 'https://wong21570.pythonanywhere.com'>
+                        <span>Click Here to Open the Body Performance Classification Web Application </span> 
+                        </a>
+                    </div>
                 </div>
                 
                 <div class = 'project'>
-                    <a href="https://github.com/kianwai96/BodyPerformance">
-                        <span>Computer Vision</span>
+                    <a href="https://github.com/kianwai96/Boots_detection">
+                        <span>Computer Vision Project</span>
                     </a>
-                <p>In this computer vision project, a Python project was developed for detecting boots in video footage. Theproject involved training a YOLOv10 model using a custom dataset of annotated boot images. After
-                    training, the model identifies and locates boots in input video streams.</p>
+                <p>In this computer vision hobby project, a Python project was developed for detecting boots in video footage. The project involved training a YOLOv10 model using a custom dataset of annotated boot images which includes both images and the labels file. After
+                    the model training has been completed, the model identifies and locates boots in input video streams.</p>
                 </div>
             </div>            
            <!-- <div class = 'links'>
@@ -169,7 +181,28 @@
             </div>-->
         </section>
         <!-- Section 5: Contact-->
-        <section id = "contact"></section>
+        <section id = "contact" class = 'contact-section'>
+            <h2>Contact</h2>
+
+            <div class = 'group'>
+                <div class = 'text'>
+                    If you'd like to discuss my work or have any inquiries, feel free to get in touch. You can reach me by phone at 014-3453589 or by email at wongkianwai96@gmail.com. I'm always open to discussing potential opportunities, or simply exchanging ideas.
+                </div>
+
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
     </main>
 
 </body>

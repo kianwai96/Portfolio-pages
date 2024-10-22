@@ -158,31 +158,59 @@
   
   /*Section 3: Education*/
 
-  .education-section h2{
-    padding: 0 50px;
-    margin-bottom: 50px;
-  } 
+  .education-section {
 
-  .education-section h2{
+    justify-content: space-between; /* Ensure there is space between the two columns */
+  
+
+
+    padding: 0 20px; /* Adds padding around the container */
+  }
+
+  .education-section h2 {
     font-size: 35px;
-    text-align: center; 
+    text-align: center;
+    width: 100%; /* Ensures the heading takes full width */
+    margin-bottom: 20px;
   }
 
-  .education-section .university{
 
-    margin-bottom: 100px;
+  .education-section .university,
+  .education-section .university2 {
+    padding: 20px;
+    margin-bottom: 5px;
+    justify-content: center;
   }
-
-  .education-section .university h2{
+  
+  .education-section .university h2,
+  .education-section .university2 h2 {
     font-size: 18px;
-    text-align: left; 
+    text-align: left;
     padding: 0 50px;
+    justify-content: center;
     margin-bottom: 0px;
+  }
+
+  .education-section .university h2,
+  .education-section .university2 h2 {
+    font-size: 18px;
+    text-align: left;
+    padding: 0 50px;
+    justify-content: center;
+    
   }
 
   .education-section .university p{
     text-align: left; 
     padding: 0 50px;
+    margin-bottom: 0px;
+
+  }
+
+  .education-section .university2 p{
+    text-align: left; 
+    padding: 0 50px;
+    margin-left: 0px;
   }
 
   /*Section 4: Projects*/
@@ -218,12 +246,75 @@
     align-items: center;
     flex-wrap: wrap;
     border: 2px solid var(--text-color);
-    width: 400px;
+    width: 420px;
     height: auto;
     object-fit: contain;
     border-radius: 5px;
   }
 
+  .project-section .project-desc .project span{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--link-color)
+  }
+
+  .project-section .project-desc .project .link span{
+    font-size: 16px;
+    font-weight: 600;
+    color: blue;
+  }
+
+ /*Section 5: Contact*/
+.contact-section{
+  padding: 0 50px;
+  margin-bottom: 100px;
+
+}
+
+.contact-section h2{
+  font-size: 35px;
+}
+
+.contact-section .group{
+  display: flex;
+  gap:50px;
+}
+
+.contact-section .group .text{
+  flex: 3;
+  margin-top: 20px;
+}
+
+.contact-section .group form{
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea{
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid var(--link-color);
+  background-color: transparent;
+  padding:10px;
+  margin-bottom: 15px;
+  outline: none;
+  resize: none;
+}
+
+.contact-section .group form button{
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--link-color) ;
+  border: none;
+  height: 50px;
+  cursor: pointer; 
+}
+
+.contact-section .group form button:hover{
+  filter: brightness(.9);
+  transition: .1s;
+}
 
   @media (max-width: 850px){
     /*Section 1: Hero*/
